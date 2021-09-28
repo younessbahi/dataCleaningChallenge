@@ -1,5 +1,5 @@
 # Ref: https://www.youtube.com/watch?v=sSnbmbRmtSA
-# You may want to install below 3 packages if haven't done yet:
+# You may want to install below 3 packages from {R console} if haven't done yet:
 ## install.packages(dplyr)
 ## install.packages(stringr)
 ## install.packages(tidyr)
