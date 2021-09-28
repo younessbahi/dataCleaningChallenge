@@ -1,4 +1,10 @@
-#Ref: https://www.youtube.com/watch?v=sSnbmbRmtSA
+# Ref: https://www.youtube.com/watch?v=sSnbmbRmtSA
+# You may want to install below 3 packages if haven't done yet:
+## install.packages(dplyr)
+## install.packages(stringr)
+## install.packages(tidyr)
+
+# Otherwise procced with loading pkgs if already installed in your system ----
 pacman::p_load(dplyr, stringr, tidyr)
 
 data <- read.csv(
@@ -10,7 +16,7 @@ data <- read.csv(
 # Return row index location of the unwanted subHeaders ----
 indexHeaders <- which(data$Row.Type == 'Row Type')
 
-#Remove empty cols ----
+#Remove row subHeaders as well as empty cols (10,11) ----
 rmHeaders    <- data[- indexHeaders, - c(10, 11)] %>% tibble()
 
 # Remove empty rows ----
