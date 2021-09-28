@@ -60,3 +60,5 @@ cleaned <- data[- indexPerson,] %>%
 			LastName,
 			Date
 		)
+
+##Exec time: 0.497 sec elapsed
