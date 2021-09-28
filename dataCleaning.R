@@ -1,5 +1,5 @@
 #Ref: https://www.youtube.com/watch?v=sSnbmbRmtSA
-pacman::p_load(dplyr, data.table, stringr, tidyr)
+pacman::p_load(dplyr, stringr, tidyr)
 
 data <- read.csv(
 		'data_cleaning_challenge.csv',
