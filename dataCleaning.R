@@ -1,4 +1,5 @@
 # Ref: https://www.youtube.com/watch?v=sSnbmbRmtSA
+# This code is the optimised version of the python example demonstrated in the above video
 # You may want to install below 3 packages from {R console} if haven't done yet:
 ## install.packages(dplyr)
 ## install.packages(stringr)
@@ -7,10 +8,11 @@
 # Otherwise procced with loading pkgs if already installed in your system ----
 pacman::p_load(dplyr, stringr, tidyr)
 
-data <- read.csv(
-		'data_cleaning_challenge.csv',
-		stringsAsFactors = FALSE,
-		header           = TRUE
+data <- 
+read.csv(
+'data_cleaning_challenge.csv',
+	stringsAsFactors = FALSE,
+	header           = TRUE
 )
 
 # Return row index location of the unwanted subHeaders ----
