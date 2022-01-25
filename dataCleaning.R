@@ -25,7 +25,8 @@ rmHeaders    <- data[- indexHeaders, - c(10, 11)] %>% tibble()
 rmEmptyRows  <- rmHeaders[!apply(rmHeaders == "", 1, all),]
 
 # Return row index location persona info [first name, last name, date],  ----
-indexPerson <- which(
+indexPerson <- 
+  which(
 		str_detect(
 			rmEmptyRows$Row.Type,
 			'first name'
