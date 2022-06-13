@@ -4,6 +4,7 @@
 ## install.packages(dplyr)
 ## install.packages(stringr)
 ## install.packages(tidyr)
+## ## install.packages(pacman) -Optional
 
 # Otherwise procced with loading pkgs
 pacman::p_load(dplyr, stringr, tidyr)
