@@ -1,11 +1,11 @@
 # Ref: https://www.youtube.com/watch?v=sSnbmbRmtSA
 # This code is the optimised version of the python example demonstrated in the above video
-# You may want to install below 3 packages from {R console} if haven't done yet:
+# You may want to install below 3 packages from your R console if you haven't done yet:
 ## install.packages(dplyr)
 ## install.packages(stringr)
 ## install.packages(tidyr)
 
-# Otherwise procced with loading pkgs if already installed in your system ----
+# Otherwise procced with loading pkgs
 pacman::p_load(dplyr, stringr, tidyr)
 
 data <- 
